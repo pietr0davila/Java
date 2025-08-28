@@ -7,20 +7,20 @@ public class Main {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-									// import de arrays
+// import de arrays
         String[] perguntas = Strings.Perguntas();
         String[] alternativas = Strings.Alternativas();
         char[] respostasCorretas = Strings.respostas();
 
         printMsg("QUIZ DE CONHECIMENTOS GERAIS");
         
-									// loop para cada pergunta
+// loop para cada pergunta
         for (int i = 0; i < perguntas.length; i++) {
             String resposta;
             boolean respostaValida;
 
             do {
-                // do... while verifica se a resposta é válida, se não for repete
+// do... while verifica se a resposta é válida, se não for repete
                 printMsg(perguntas[i]);
                 printMsg(alternativas[i]);
                 printMsg("Sua resposta (A, B, C ou D): ", false);
